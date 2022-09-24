@@ -1,4 +1,4 @@
-package com.example.marsphotos.adapters
+package com.example.marsphotos.overview.adapters
 
 import android.view.View
 import android.widget.ImageView

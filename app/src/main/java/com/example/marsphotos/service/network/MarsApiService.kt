@@ -25,11 +25,8 @@ interface MarsApiService {
 
 object MarsApi {
 
-    val retrofitService: MarsApiService by lazy {
-        retrofit.create(MarsApiService::class.java)
-    }
+    val retrofitService: MarsApiService by lazy { retrofit.create(MarsApiService::class.java) }
 }
-
 
 /*private const val BASE_URL2 = "https://android-kotlin-fun-mars-server.appspot.com"
 private val retrofit2 = Retrofit.Builder() //Compilador de retrofit, para compilar y crear un objeto retrofit
