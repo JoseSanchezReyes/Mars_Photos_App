@@ -9,9 +9,7 @@ import com.example.marsphotos.service.network.MarsApi
 import com.example.marsphotos.service.network.MarsPhoto
 import kotlinx.coroutines.launch
 
-enum class MarsApiStatus{
-    LOADING, ERROR, DONE
-}
+enum class MarsApiStatus{ LOADING, ERROR, DONE }
 
 class OverviewViewModel : ViewModel() {
 
@@ -32,8 +30,8 @@ class OverviewViewModel : ViewModel() {
                 _photos.value = MarsApi.retrofitService.getPhotos()
                 _status.value = MarsApiStatus.DONE
             }catch (e: Exception) {
-                _photos.value = listOf()
                 _status.value = MarsApiStatus.ERROR
+                _photos.value = listOf()
                 Log.d("ViewModel", "Failure: ${e.message}")
             }
         }

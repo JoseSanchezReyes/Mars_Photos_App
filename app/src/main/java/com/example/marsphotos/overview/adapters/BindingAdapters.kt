@@ -1,5 +1,6 @@
 package com.example.marsphotos.overview.adapters
 
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.core.net.toUri
@@ -45,6 +46,8 @@ fun bindStatus(statusImageView: ImageView, status: MarsApiStatus?) {
         MarsApiStatus.DONE -> {
             statusImageView.visibility = View.GONE
         }
-        else -> {}
+        else -> {
+            Log.d("BindingAdaptersStatus", "No se encontro el estatus")
+        }
     }
 }
