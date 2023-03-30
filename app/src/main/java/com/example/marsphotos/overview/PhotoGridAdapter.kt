@@ -44,6 +44,5 @@ class PhotoGridAdapter : ListAdapter<MarsPhoto, PhotoGridAdapter.MarsPhotoViewHo
         override fun areContentsTheSame(oldItem: MarsPhoto, newItem: MarsPhoto): Boolean {
             return oldItem.imgSrcUrl == newItem.imgSrcUrl
         }
-
     }
 }
