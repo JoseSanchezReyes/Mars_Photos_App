@@ -10,6 +10,8 @@
 - 💣 Retrofit
 - 💅🏾 Coil
 
+- ✨JUnit
+
 ### Screens Project
 <p>
   <a href="#">

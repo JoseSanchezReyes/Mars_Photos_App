@@ -35,7 +35,7 @@ android {
         dataBinding true
     }
 
-    //Usar los directorios test para pruebas unitarias
+    //Usar los directorios de recursos en los test para pruebas unitarias
     sourceSets {
         test.resources.srcDirs += 'src/test/res'
     }
@@ -50,8 +50,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.4'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.7.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.5'
 
     // Moshi
     implementation 'com.squareup.moshi:moshi-kotlin:1.9.3'
